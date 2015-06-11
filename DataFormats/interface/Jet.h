@@ -58,6 +58,7 @@ namespace cat {
 //    float L5ChartJEC() const { return L5CharmJEC_; }
 //    float L5UDSJEC() const { return L5UDSJEC_; }
 //    float L5GluonJEC() const { return L5GluonJEC_; }
+//    Also will be added for L7Parton
     float EnergyRaw() const { return EnergyRaw_; }
     float PtRaw() const { return PtRaw_; }
   
