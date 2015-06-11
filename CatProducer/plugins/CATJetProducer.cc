@@ -121,6 +121,7 @@ cat::CATJetProducer::produce(edm::Event & iEvent, const edm::EventSetup & iSetup
 //    aJet.setL5CharmJEC( aPatJet.correctedJet("L5Flavor_cT").pt() / aPatJet.pt() );
 //    aJet.setL5UDSJEC( aPatJet.correctedJet("L5Flavor_qT").pt() / aPatJet.pt() );
 //    aJet.setL5GluonJEC( aPatJet.correctedJet("L5Flavor_gJ").pt() / aPatJet.pt() );
+//    Also will be added for L7Parton
     aJet.setEnergyRaw( aPatJet.correctedJet("Uncorrected").energy() );
     aJet.setPtRaw( aPatJet.correctedJet("Uncorrected").pt() );
 
