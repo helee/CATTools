@@ -82,11 +82,13 @@ cat::CATMuonProducer::produce(edm::Event & iEvent, const edm::EventSetup & iSetu
     iEvent.getByToken(shiftedEnDownSrc_, shiftedEnDownSrc);
     iEvent.getByToken(shiftedEnUpSrc_, shiftedEnUpSrc);
   }
-
+ 
   auto_ptr<vector<cat::Muon> >  out(new vector<cat::Muon>());
   int j = 0;
   for (const pat::Muon & aPatMuon : *src) {
     cat::Muon aMuon(aPatMuon);
+
+//    aMuon.setEnergy( aPatMuon.energy() );  
 
     if (runOnMC_){
       aMuon.setShiftedEnDown(shiftedEnDownSrc->at(j).pt() );
