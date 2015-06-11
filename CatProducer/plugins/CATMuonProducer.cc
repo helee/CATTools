@@ -117,10 +117,10 @@ cat::CATMuonProducer::produce(edm::Event & iEvent, const edm::EventSetup & iSetu
     aMuon.setPhotonIso03( phIso03 );
     aMuon.setPUChargedHadronIso03( puIso03 );
     aMuon.setrelIso(0.3, chIso03, nhIso03, phIso03, puIso03, pt);
-    
+
     // cout << "aPatMuon.chargedHadronIso() " << aPatMuon.chargedHadronIso()
-    // 	 << " aPatMuon.pfIsolationR04 " <<  aPatMuon.pfIsolationR04().sumChargedHadronPt
-    // 	 << endl;
+    //       << " aPatMuon.pfIsolationR04 " <<  aPatMuon.pfIsolationR04().sumChargedHadronPt
+    //       << endl;
 
     aMuon.setIsGlobalMuon( aPatMuon.isGlobalMuon() );
     aMuon.setIsPFMuon( aPatMuon.isPFMuon() );

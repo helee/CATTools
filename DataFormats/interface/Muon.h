@@ -22,6 +22,8 @@ namespace cat {
     Muon(const reco::LeafCandidate & aMuon); 
     virtual ~Muon();
 
+//    float Energy() const { return Energy_; }
+
     float relIso(float dR=0.3 ) const {
       if( dR < 0.35) return relIso03_;
       else return relIso04_;
@@ -66,6 +68,8 @@ namespace cat {
       else return photonIso04_;
     }
 
+//    void setEnergy(float f) { Energy_ = f; }
+
     void setChargedHadronIso03(float i) { chargedHadronIso03_ = i; }
     void setPUChargedHadronIso03(float i) { puChargedHadronIso03_ = i; }
     void setNeutralHadronIso03(float i) { neutralHadronIso03_ = i; }
@@ -101,6 +105,8 @@ namespace cat {
 
   private:
 
+//    float Energy_;
+   
     float relIso03_;
     float relIso04_;
 
